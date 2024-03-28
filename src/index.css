@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+  background-image: linear-gradient(135deg, #aaffff, #ffaec4); 
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+  
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+  margin: 0;
+  }
+
+.navUL{
+  display: inline-flex;
+}
+
+.navbarButton{
+  margin: 4px;
+  padding: 4px 10px 4px 10px;
+  border-radius: 12%;
+  font-weight: 600;
+
+}
+
+.pokecardContainer{
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+
+
+}
+
+
+.pokemonCard{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pokemonCard p {
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+.pokemonCard img {
+  max-width: 100%;
+  max-height: fit-content;
+  height: auto;
+  border-radius: 8px;
+}
+.pokemonCard:hover {
+  transform: scale(1.05);
+}
+
+.forwardBackwardButtons{
+  padding-top: 20px;
+}
+.genericBtn{
+  background-color: #f1356d;
+  color: white;
+  font-weight: 700;
+  margin-right: 20px;
+  border-radius: 7px;
+  border-style: none;
+  width: 12rem;
+  height: 3rem;
+}
+
+.genericBtn:hover {
+  width: 12.2rem;
+  height: 3.2rem;
 }
