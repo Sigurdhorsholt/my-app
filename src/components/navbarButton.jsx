@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function NavbarButton({ text, lightDark }) {
+export default function NavbarButton({ to, text, lightDark }) {
   return (
     <div>
-      <a
-        href="/"
+      {/* Replace anchor tag with Link component */}
+      <Link
+        to={to}
         className="navbarButton"
         style={{
           color: "white",
@@ -12,7 +14,7 @@ export default function NavbarButton({ text, lightDark }) {
         }}
       >
         {text}
-      </a>
+      </Link>
     </div>
   );
 }

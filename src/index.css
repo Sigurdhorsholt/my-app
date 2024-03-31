@@ -67,6 +67,7 @@ body{
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  text-decoration: none;
 }
 
 .pokemonCard p {
@@ -102,4 +103,71 @@ body{
 .genericBtn:hover {
   width: 12.2rem;
   height: 3.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about {
+  max-width: 800px; /* Set a maximum width for the content area */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px; /* Add some padding for spacing */
+  border: 1px solid #ddd; /* Add a thin border */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.about h2 {
+  font-size: 2em; /* Set a larger font size for the title */
+  margin-bottom: 10px; /* Add some space after the title */
+}
+
+.about img {
+  width: 200px; /* Set a width for the image */
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add some margin between the image and the content */
+}
+
+.about p {
+  margin-bottom: 10px; /* Add some space after paragraphs */
+}
+
+.about ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.about ul li {
+  display: inline-block; /* Display list items inline */
+  margin-right: 10px; /* Add margin between list items */
+}
+
+.about table {
+  width: 100%; /* Make the table span the full width */
+  border-collapse: collapse; /* Remove borders between table cells */
+}
+
+.about th,
+.about td {
+  padding: 5px; /* Add padding to table cells */
+  border: 1px solid #ddd; /* Add a thin border to table cells */
+  text-align: left; /* Align content left */
+}
+
+.about th {
+  font-weight: bold; /* Make table headers bold */
 }

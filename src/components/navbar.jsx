@@ -6,9 +6,9 @@ export default function navbar() {
     <div className="navbar">
       <h1>Pokedex site</h1>
       <div className="navUL">
-        <NavbarButton text={"Home"} lightDark={"light"} />
-        <NavbarButton text={"About"} lightDark={"light"} />
-        <NavbarButton text={"PokeDex"} lightDark={"dark"} />
+        <NavbarButton to="/home" text={"Home"} lightDark={"light"} />
+        <NavbarButton to="/about" text={"About"} lightDark={"light"} />
+        <NavbarButton to="/pokedex" text={"PokeDex"} lightDark={"dark"} />
       </div>
     </div>
   );

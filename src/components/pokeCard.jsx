@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function PokeCard({pokemon}) {
 
@@ -46,17 +47,23 @@ export default function PokeCard({pokemon}) {
     }
     
 
+const handleClick = function(pokemonID) {
 
+}
 
   return (
-<div className="pokemonCard" style={{
+<div className="pokemonCard" onClick={() => {handleClick(pokemon.id)}} style={{
             color: "white",
             backgroundColor: determineColor(pokemon.types[0].type.name),
         }}>
+            <Link to={`/about/${pokemon.id}`}>
+
+
     <p>{pokemon.name} #{pokemon.id}</p>
     {pokemon.sprites && pokemon.sprites.front_default && (
         <img src={pokemon.sprites.front_default} alt="" />
       )}
+      </Link>
 </div>
   )
 }

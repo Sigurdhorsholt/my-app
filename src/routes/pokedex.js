@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import PokeCard from "./pokeCard";
+import PokeCard from "../components/pokeCard";
 
 const Pokedex = () => {
   const [pokemons, setPokemons] = useState([]); //state - remembers the pokemons currently fetched
@@ -7,20 +7,6 @@ const Pokedex = () => {
 
   const queryLimit = 12;
 
-  /*
-  useEffect(() => {
-    fetch(
-      `https://pokeapi.co/api/v2/pokemon?limit=${queryLimit}&offset=${queryOffSet}`
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setPokemons(data.results);
-      })
-      .catch((error) => {
-        console.log("Fetch problem in pokedex component..", error);
-      });
-  }, [queryOffSet]); //queryoffset triggers refetch and rerender.. increment is handle in a click function..
-*/
 useEffect(() => {
   //Fetch list of 12 pokemons for 4x3 grid
   fetch(
@@ -85,5 +71,8 @@ useEffect(() => {
     </div>
   );
 };
+
+
+
 
 export default Pokedex;
